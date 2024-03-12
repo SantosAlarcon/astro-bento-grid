@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import "../styles/grid.css"
+import GridComponent from "../components/GridComponent.astro"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+        <h1>Astro Bento Grid</h1>
+		<main id="grid__container">
+           <GridComponent title="Componente 1" /> 
+           <GridComponent title="Componente 2" /> 
+           <GridComponent title="Componente 3" /> 
+           <GridComponent title="Componente 4" /> 
+           <GridComponent title="Componente 5" /> 
+           <GridComponent title="Componente 6" /> 
+           <GridComponent title="Componente 7" /> 
+           <GridComponent title="Componente 8" /> 
+           <GridComponent title="Componente 9" /> 
+           <GridComponent title="Componente 10" /> 
+           <GridComponent title="Componente 11" /> 
+           <GridComponent title="Componente 12" /> 
+		</main>
+	</body>
+</html>

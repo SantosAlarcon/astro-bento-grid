@@ -1,0 +1,48 @@
+.credit-card__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem;
+	border: 1px #fff3 solid;
+	border-radius: 1rem;
+	transition: all 0.3s ease-in-out;
+	background: linear-gradient(#88a 0%, #446 50%, #88a 100%);
+	user-select: none;
+}
+
+.credit-card__top,
+.credit-card__bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.credit-card__balance {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.credit-card__balance__title {
+	font-size: 1rem;
+	color: #fff8;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.credit-card__balance__amount {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.credit-card__logo__image {
+	width: 5rem;
+}
+
+.credit-card__title__text {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

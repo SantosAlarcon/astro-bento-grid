@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+const { titular, saldo } = Astro.props;
+---
+
+<section class="credit-card__container">
+  <div class="credit-card__top">
+    <div class="credit-card__balance">
+      <h4 class="credit-card__balance__title">Saldo actual:</h4>
+      <span class="credit-card__balance__amount">{saldo} €</span>
+    </div>
+    <div class="credit-card__logo">
+      <img class="credit-card__logo__image" src="/astro-bento-grid/visa-logo.svg" alt="VISA Logo" />
+    </div>
+  </div>
+  <div class="credit-card__bottom">
+    <div class="credit-card__title">
+      <span class="credit-card__title__text">{titular}</span>
+    </div>
+  </div>
+</section>

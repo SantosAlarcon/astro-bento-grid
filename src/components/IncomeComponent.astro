@@ -1,0 +1,12 @@
+---
+const {amount} = Astro.props
+import "../styles/income.css"
+---
+<section class="income__component__container">
+    <div class="income__component__title">
+        <div class="income__component__text">Ingresos obtenidos:</div>
+    </div>
+    <div class="income__component__amount">
+        +{amount} €
+    </div>
+</section>

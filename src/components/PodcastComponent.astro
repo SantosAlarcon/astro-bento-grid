@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+
+const { titulo, episodio, imagen } = Astro.props;
+Image;
+import "../styles/podcast.css";
+---
+
+<section class="podcast__component__container">
+    <div class="podcast__component__top">
+        <div class="podcast__component__last__podcast__ti tle">
+            <span class="podcast__component__last__podcast__title__text"
+                >Último podcast</span
+            >
+        </div>
+    </div>
+    <div class="podcast__component__middle">
+        <div class="podcast__component__podcast__info">
+            <Image
+                class="podcast__component__logo"
+                src={imagen}
+                width="48"
+                alt={titulo}
+                height="48"
+            />
+            <span class="podcast__component__podcast__title">{titulo}</span>
+        </div>
+        <div class="podcast__component__controls">
+            <Image
+                src="/astro-bento-grid/play-icon.svg"
+                width="32"
+                height="32"
+                alt="Reproducir"
+            />
+        </div>
+    </div>
+    <div class="podcast__component__bottom">
+        <div class="podcast__component__episode__title">{episodio}</div>
+    </div>
+</section>

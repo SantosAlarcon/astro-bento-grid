@@ -1,0 +1,24 @@
+.income__component__container {
+    display: flex;
+    border: 1px #fff6 solid;
+    border-radius: 1rem;
+    background: linear-gradient(#99f 0%, #66f 100%);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 8px #fff8;
+}
+
+.income__component__title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-shadow: 4px 4px 4px #0006;
+}
+
+.income__component__amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #aaf;
+    text-shadow: 4px 4px 4px #33f;
+}

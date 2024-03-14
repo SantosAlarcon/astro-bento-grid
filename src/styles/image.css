@@ -1,0 +1,19 @@
+.image__component__container {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+	align-items: center;
+}
+
+.image__component__title {
+	font-weight: 700;
+	color: #111;
+	font-size: 1.3rem;
+}
+
+.image__component__image {
+	width: 40%;
+	max-height: auto;
+}

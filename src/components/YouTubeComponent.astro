@@ -1,0 +1,19 @@
+---
+const { subscribers } = Astro.props;
+import "../styles/youtube.css";
+---
+
+<section class="youtube__component__container">
+  <div class="youtube__component__inner">
+    <div class="youtube__component__logo">
+      <img
+        class="youtube__component__logo__image"
+        src="/astro-bento-grid/youtube-logo.svg"
+        alt="YouTube Logo"
+      />
+    </div>
+    <div class="youtube__component__text">
+      <span class="youtube__component__text__subscribers">{subscribers}</span>
+    </div>
+  </div>
+</section>

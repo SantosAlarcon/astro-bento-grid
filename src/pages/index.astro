@@ -6,6 +6,9 @@ import GridComponent from "../components/GridComponent.astro";
 import CreditCardComponent from "../components/CreditCardComponent.astro";
 import IncomeComponent from "../components/IncomeComponent.astro";
 import PodcastComponent from "../components/PodcastComponent.astro";
+import ImageComponent from "../components/ImageComponent.astro";
+import TwitchComponent from "../components/TwitchComponent.astro";
+import YouTubeComponent from "../components/YouTubeComponent.astro";
 ---
 
 <!doctype html>
@@ -22,15 +25,15 @@ import PodcastComponent from "../components/PodcastComponent.astro";
             />
             <IncomeComponent amount="950" />
             <PodcastComponent titulo="Todopoderosos" episodio="TODOPODEROSOS #103 Akira Kurosawa y el pasodoble. (Kurosawa Vol. I)" imagen="https://img-static.ivoox.com/index.php?w=145&h=145&url=https://static-1.ivoox.com/canales/2/1/6/1/5661525711612_XXL.jpg" />
+	    <ImageComponent src="/astro-bento-grid/grafico.webp" alt="Uso de frameworks en España" />
+	    <TwitchComponent newFollower="momotamomo" />
+	    <YouTubeComponent subscribers="9600" />
             <GridComponent title="Componente 1" />
             <GridComponent title="Componente 2" />
             <GridComponent title="Componente 3" />
             <GridComponent title="Componente 4" />
             <GridComponent title="Componente 5" />
             <GridComponent title="Componente 6" />
-            <GridComponent title="Componente 7" />
-            <GridComponent title="Componente 8" />
-            <GridComponent title="Componente 9" />
         </main>
     </body>
 </html>

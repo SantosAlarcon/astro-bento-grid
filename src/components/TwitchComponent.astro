@@ -1,0 +1,18 @@
+---
+const { newFollower } = Astro.props;
+import "../styles/twitch.css";
+---
+
+<section class="twitch__component__container">
+  <div class="twitch__component__logo">
+    <img
+      class="twitch__component__logo__image"
+      src="/astro-bento-grid/twitch-logo.svg"
+      alt="Twitch Logo"
+    />
+  </div>
+  <div class="twitch__component__text">
+    <span class="twitch__component__text__title">Nuevo seguidor:</span>
+    <span class="twitch__component__text__follower">{newFollower}</span>
+  </div>
+</section>

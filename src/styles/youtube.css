@@ -4,7 +4,7 @@
 	padding: 1rem;
 	border: 1px #000 solid;
 	border-radius: 1rem;
-	background: linear-gradient(#faa 0%, #f88 100%);
+	background: linear-gradient(#f66 0%, #f33 100%);
 	gap: 1rem;
 	user-select: none;
 	grid-column: span 2;
@@ -27,8 +27,11 @@
 	width: 128px;
 }
 
+.youtube__component__text {
+    justify-self: start;
+}
+
 .youtube__component__text__subscribers {
-	align-self: start;
 	font-size: 3rem;
 	font-weight: 700;
 }

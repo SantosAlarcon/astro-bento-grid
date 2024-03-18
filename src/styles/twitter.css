@@ -1,0 +1,43 @@
+.twitter__component__container {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	border-radius: 1rem;
+	padding: 2rem;
+	background: linear-gradient(#1d9bf0 0%, #0c3857 100%);
+	grid-row: span 2;
+}
+
+.twitter__component__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.twitter__component__username {
+	display: flex;
+	align-items: center;
+}
+
+.twitter__component__username__text {
+	font-size: .85rem;
+}
+
+.twitter__component__tweet {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.twitter__component__tweet__text::before,
+.twitter__component__tweet__text::after {
+	content: "\"";
+}
+
+.twitter__component__tweet__text {
+	font-style: oblique;
+	font-weight: bold;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}

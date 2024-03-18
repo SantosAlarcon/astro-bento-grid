@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets"
+import "../styles/system.css"
+---
+<section class="system__info__container">
+    <div class="system__info__os__logo">
+	    <Image class="system__info__os__logo__img" src="/astro-bento-grid/archlinux-logo.svg" width="150" height="150" alt="ArchLinux Logo" />
+    </div>
+    <div class="system__info__details">
+		<span class="system__info__details__item"><b>Sistema operativo: </b>Arch Linux x86_64</span>
+		<span class="system__info__details__item"><b>Procesador: </b>AMD Ryzen 5 7520U with Radeon Graphics</span>
+		<span class="system__info__details__item"><b>Memoria RAM: </b>16 GB de RAM LP-DDR4</span>
+		<span class="system__info__details__item"><b>SSD: </b>Intel NvMe 512 GB</span>
+		<span class="system__info__details__item"><b>Resolución de pantalla: </b>1920x1080</span>
+    </div>
+</section>

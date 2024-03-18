@@ -1,32 +1,27 @@
 ---
 const { locale } = Astro.props;
-import reloj from "../reloj";
 import "../styles/datetime.css";
 let fecha = new Date();
-let cadenaReloj = reloj(fecha);
 ---
-<script define:vars={{reloj}} is:inline>
-    setInterval(() => {
-        fecha = new Date();
-        cadenaReloj = reloj(fecha);
-    }, 1000)
+<script src="../reloj.ts">
 </script>
+
 <section class="datetime__component__container">
-    <div class="datetime__component__time">
-        <span class="datetime__component__time__numbers">{cadenaReloj}</span>
-    </div>
-    <div class="datetime__component__date">
-        <time
-            class="datetime__component__date__strings"
-            datetime={fecha.toISOString()}
-        >
-            {
-                fecha.toLocaleDateString(locale, {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                })
-            }
-        </time>
-    </div>
+  <div class="datetime__component__time">
+    <span id="clock" class="datetime__component__time__numbers"></span>
+  </div>
+  <div class="datetime__component__date">
+    <time
+      class="datetime__component__date__strings"
+      datetime={fecha.toISOString()}
+    >
+      {
+        fecha.toLocaleDateString(locale, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      }
+    </time>
+  </div>
 </section>

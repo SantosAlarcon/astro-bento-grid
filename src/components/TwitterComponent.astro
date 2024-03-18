@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets"
+import "../styles/twitter.css"
+---
+<section class="twitter__component__container">
+  <div class="twitter__component__top">
+	<div class="twitter__component__logo">
+	    <Image class="twitter__component__logo__image" src="/astro-bento-grid/twitter-logo.svg" width="50" height="50" alt="Twitter Logo" />
+	</div>
+	<div class="twitter__component__username">
+		<span class="twitter__component__username__text">Último tweet de <b>@momotamomo</b></span>
+	</div>
+    </div>
+  <div class="twitter__component__bottom">
+	<div class="twitter__component__tweet">
+	    <Image class="twitter__component__userimage" src="/astro-bento-grid/momotamomo.jpg" width="150" height="150" alt="Twitter Logo" />
+	    <span class="twitter__component__tweet__text">
+		¡Buenos días, momosaurios!<br><br>
+		Hoy he ido a mi último revisión del médico, y me ha dicho que ya estoy totalmente recuperada de la operación.<br><br>
+		Espero que en esta semana vuelva a hacer directos. ¡Os quiero mucho! 🥰 
+	    </span>
+	</div>
+    </div>
+</section>

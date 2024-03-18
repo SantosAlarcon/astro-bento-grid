@@ -10,6 +10,9 @@ import ImageComponent from "../components/ImageComponent.astro";
 import TwitchComponent from "../components/TwitchComponent.astro";
 import YouTubeComponent from "../components/YouTubeComponent.astro";
 import DateTimeComponent from "../components/DateTimeComponent.astro";
+import SystemInfoComponent from "../components/SystemInfoComponent.astro"
+import TwitterComponent from "../components/TwitterComponent.astro"
+import PhoneComponent from "../components/PhoneComponent.astro"
 ---
 
 <!doctype html>
@@ -37,11 +40,12 @@ import DateTimeComponent from "../components/DateTimeComponent.astro";
             <TwitchComponent newFollower="momotamomo" />
             <YouTubeComponent subscribers="9600" />
             <DateTimeComponent locale="es-es" />
+	    <SystemInfoComponent />
+	    <TwitterComponent />
             <GridComponent title="Componente 1" />
-            <GridComponent title="Componente 2" />
+	    <PhoneComponent />
             <GridComponent title="Componente 3" />
             <GridComponent title="Componente 4" />
-            <GridComponent title="Componente 5" />
         </main>
     </body>
 </html>

@@ -1,8 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import "../styles/credit-card.css";
-import GridComponent from "../components/GridComponent.astro";
+import "../styles/grid.css";
 import CreditCardComponent from "../components/CreditCardComponent.astro";
 import IncomeComponent from "../components/IncomeComponent.astro";
 import PodcastComponent from "../components/PodcastComponent.astro";
@@ -13,6 +12,7 @@ import DateTimeComponent from "../components/DateTimeComponent.astro";
 import SystemInfoComponent from "../components/SystemInfoComponent.astro"
 import TwitterComponent from "../components/TwitterComponent.astro"
 import PhoneComponent from "../components/PhoneComponent.astro"
+import TaskListComponent from "../components/TaskListComponent.astro";
 ---
 
 <!doctype html>
@@ -36,16 +36,19 @@ import PhoneComponent from "../components/PhoneComponent.astro"
             <ImageComponent
                 src="/astro-bento-grid/grafico.webp"
                 alt="Uso de frameworks en España"
+		bg="#fff"
+		width="40%"
             />
             <TwitchComponent newFollower="momotamomo" />
             <YouTubeComponent subscribers="9600" />
             <DateTimeComponent locale="es-es" />
 	    <SystemInfoComponent />
 	    <TwitterComponent />
-            <GridComponent title="Componente 1" />
+            <TaskListComponent />
+	    <ImageComponent src="/astro-bento-grid/react-logo.svg" alt="" bg="#111" width="50%" />
 	    <PhoneComponent />
-            <GridComponent title="Componente 3" />
-            <GridComponent title="Componente 4" />
+	    <ImageComponent src="/astro-bento-grid/astro-logo-gradient.svg" alt="" bg="#111" width="100%" />
+	    <ImageComponent src="/astro-bento-grid/linkedin-logo.svg" alt="" bg="#113" width="100%" />
         </main>
     </body>
 </html>

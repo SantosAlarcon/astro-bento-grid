@@ -1,8 +1,8 @@
 ---
-const { src, alt } = Astro.props;
+const { src, alt, bg, width } = Astro.props;
 import "../styles/image.css"
 ---
-<section class="image__component__container">
+<section class="image__component__container" style={`background-color: ${bg}`}>
     <h5 class="image__component__title">{alt}</h5>
-    <img class="image__component__image" src={src} alt={alt} />
+    <img class="image__component__image" src={src} alt={alt} width={width} />
 </section>

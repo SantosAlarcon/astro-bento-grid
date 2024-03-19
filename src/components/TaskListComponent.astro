@@ -1,0 +1,22 @@
+---
+import "../styles/tasklist.css";
+import tareas from "../tareas.json";
+---
+
+<section class="tasklist__container">
+  <div class="tasklist__title">
+    <h5 class="tasklist__title__text">Lista de tareas</h5>
+  </div>
+  <div class="tasklist__list">
+    {
+      tareas.map((tarea) => (
+        <div class="tasklist__list__item">
+          <span class="tasklist__list__item__icon">
+            <i class="fa-solid fa-list-check" />
+          </span>
+          <span class="tasklist__list__item__text">{tarea.titulo}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>

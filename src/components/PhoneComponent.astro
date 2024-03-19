@@ -2,15 +2,57 @@
 import { Image } from "astro:assets";
 import "../styles/phone.css";
 ---
+
 <section class="phone__component__container">
-	<div class="phone__component__top">
-	    <div class="phone__component__phone__logo">
-		<Image class="phone__component__phone__logo__image" src="/astro-bento-grid/poco-logo.svg" width="50" height="50" alt="Phone Logo" />
-		<span class="phone__component__phone__logo__text">POCO F1</span>
-	    </div>
-	    <div class="phone__component__phone__os">
-		<Image class="phone__component__phone__logo__image" src="/astro-bento-grid/android-logo.svg" width="25" height="25" alt="Android Logo" />
-		<span class="phone__component__phone__logo__text">10</span>
-	    </div>
-	</div>
+    <div class="phone__component__top">
+        <div class="phone__component__phone__logo">
+            <Image
+                class="phone__component__phone__logo__image"
+                src="/astro-bento-grid/poco-logo.svg"
+                width="50"
+                height="50"
+                alt="Phone Logo"
+            />
+            <span class="phone__component__phone__logo__text">POCO F1</span>
+        </div>
+        <div class="phone__component__phone__os">
+            <Image
+                class="phone__component__phone__logo__image"
+                src="/astro-bento-grid/android-logo.svg"
+                width="25"
+                height="25"
+                alt="Android Logo"
+            />
+            <span class="phone__component__phone__logo__text">10</span>
+        </div>
+    </div>
+    <div class="phone__component__bottom">
+        <div class="phone__component__feature__item" title="Batería">
+            <div class="phone__component__feature__icon"><i class="fa-solid fa-battery" /></div>
+            <div class="phone__component__feature__value">
+                <div class="phone__component__feature__amount">68%</div>
+                <div class="phone__component__feature__progress">
+                    <progress value=68 max=100 />
+                </div>
+            </div>
+        </div>
+        <div class="phone__component__feature__item" title="Memoria interna">
+            <div class="phone__component__feature__icon"><i class="fa-solid fa-chart-pie" /></div>
+            <div class="phone__component__feature__value">
+                <div class="phone__component__feature__amount">35 / 128 GB</div>
+                <div class="phone__component__feature__progress">
+                    <progress value=35 max=128 />
+                </div>
+            </div>
+        </div>
+        <div class="phone__component__feature__item" title="MicroSD">
+            <div class="phone__component__feature__icon"><i class="fa-solid fa-sd-card" /></div>
+            <div class="phone__component__feature__value">
+                <div class="phone__component__feature__amount">58.7 / 128 GB</div>
+                <div class="phone__component__feature__progress">
+                    <progress value=58 max=128 />
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

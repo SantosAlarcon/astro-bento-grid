@@ -1,6 +1,6 @@
 # Astro Bento Grid
 
-[Portada](portada.webp)
+![Portada](portada.webp)
 
 Características:
 

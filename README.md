@@ -1,6 +1,6 @@
 # Astro Bento Grid
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+![Portada](portada.webp)
 
 Características:
 

@@ -9,6 +9,11 @@
 	transition: all 0.3s ease-in-out;
 	background: linear-gradient(#88a 0%, #446 50%, #88a 100%);
 	user-select: none;
+	box-sizing: border-box;
+
+	@media (width < 560px) {
+		width: 100%;
+	}
 }
 
 .credit-card__top,

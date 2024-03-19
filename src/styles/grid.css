@@ -3,10 +3,14 @@
 	grid-template-columns: repeat(4, 1fr);
 	width: calc(100% - 4rem);
 	gap: 1rem;
-	box-sizing: border-box;
+
+	&>* {
+		filter: drop-shadow(0 8px 8px #0006);
+	}
 
 	@media (width < 1080px) {
 		grid-template-columns: repeat(3, 1fr);
+		width: 100%;
 	}
 
 	@media (width < 720px) {
@@ -15,26 +19,5 @@
 
 	@media (width < 560px) {
 		grid-template-columns: repeat(1, 1fr);
-	}
-}
-
-.grid__component__text {
-	font-size: 1rem;
-	line-height: 1.3rem;
-}
-
-.grid__component__container {
-	padding: 2rem;
-	border: 1px #fff3 solid;
-	border-radius: 1rem;
-	transition: all 0.3s ease-in-out;
-	background: #223;
-	user-select: none;
-
-	&:nth-child(5),
-	&:nth-child(6),
-	&:nth-child(7),
-	&:nth-child(10) {
-		grid-column: span 2;
 	}
 }

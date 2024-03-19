@@ -10,6 +10,14 @@
 	line-height: 1.4rem;
 	font-size: 1.1rem;
 	gap: 3rem;
+	box-sizing: border-box;
+	
+	@media (width < 720px) {
+		grid-column: span 1;
+		font-size: .7rem;
+		line-height: 1rem;
+	}
+
 }
 
 .system__info__details {

@@ -8,7 +8,11 @@
 	gap: 1rem;
 	user-select: none;
 	grid-column: span 2;
+	box-sizing: border-box;
 	
+	@media (width < 720px) {
+		grid-column: span 1;
+	}
 }
 
 .youtube__component__inner {

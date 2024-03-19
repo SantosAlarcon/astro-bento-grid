@@ -5,6 +5,11 @@
 	padding: 1rem;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
+
+	@media (width < 560px) {
+		width: 100%;
+	}
 }
 
 .image__component__title {

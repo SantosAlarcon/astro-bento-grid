@@ -6,6 +6,11 @@
 	padding: 2rem;
 	background: linear-gradient(#23aa23 0%, #236623 75%, #23aa23 100%);
 	border-radius: 1rem;
+	box-sizing: border-box;
+	
+	@media (width < 720px) {
+		grid-column: span 1;
+	}
 }
 
 .phone__component__top {

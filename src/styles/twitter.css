@@ -6,6 +6,12 @@
 	padding: 2rem;
 	background: linear-gradient(#1d9bf0 0%, #0c3857 100%);
 	grid-row: span 2;
+	box-sizing: border-box;
+	
+	@media (width < 720px) {
+		grid-column: span 1;
+	}
+
 }
 
 .twitter__component__top {

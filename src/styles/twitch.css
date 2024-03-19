@@ -9,6 +9,12 @@
 	background-color: #ccf;
 	padding: 1rem 3rem;
 	grid-column: span 2;
+	box-sizing: border-box;
+
+	@media (width < 720px) {
+		grid-column: span 1;
+		width: 100%;
+	}
 }
 
 .twitch__component__logo {

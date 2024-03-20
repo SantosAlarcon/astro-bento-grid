@@ -16,6 +16,7 @@
 		grid-column: span 1;
 		font-size: .7rem;
 		line-height: 1rem;
+		gap: 1rem;
 	}
 
 }

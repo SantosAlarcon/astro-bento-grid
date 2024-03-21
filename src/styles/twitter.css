@@ -20,6 +20,13 @@
 	justify-content: space-between;
 }
 
+.twitter__component__logo__image {
+    vertical-align: middle;
+	@media (width < 560px) {
+		width: clamp(2rem, 2vw, 3rem);
+	}
+}
+
 .twitter__component__username {
 	display: flex;
 	align-items: center;

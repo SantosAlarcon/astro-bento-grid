@@ -11,14 +11,23 @@
 	font-size: 1.1rem;
 	gap: 3rem;
 	box-sizing: border-box;
-	
+
 	@media (width < 720px) {
 		grid-column: span 1;
-		font-size: .7rem;
-		line-height: 1rem;
+		font-size: .6rem;
+		line-height: .8rem;
 		gap: 1rem;
+		padding: .5rem;
 	}
 
+}
+
+.system__info__os__logo__img {
+	vertical-align: middle;
+	@media (width < 720px) {
+		width: 4rem !important;
+		height: 4rem !important;
+	}
 }
 
 .system__info__details {

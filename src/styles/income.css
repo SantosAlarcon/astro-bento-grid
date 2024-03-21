@@ -19,6 +19,11 @@
 	font-weight: 700;
 	font-size: 1.3rem;
 	text-shadow: 4px 4px 4px #0006;
+
+	@media (width < 769px) {
+		font-size: clamp(1rem, 2.5vw, 1.3rem);
+		line-height: 1rem;
+	}
 }
 
 .income__component__amount {
@@ -26,4 +31,8 @@
 	font-weight: 700;
 	color: #aaf;
 	text-shadow: 4px 4px 4px #33f;
+
+	@media (width < 769px) {
+		font-size: clamp(3rem, 2.5vw, 3.5rem);
+	}
 }

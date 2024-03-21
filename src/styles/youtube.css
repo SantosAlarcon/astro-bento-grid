@@ -9,7 +9,7 @@
 	user-select: none;
 	grid-column: span 2;
 	box-sizing: border-box;
-	
+
 	@media (width < 720px) {
 		grid-column: span 1;
 	}
@@ -24,18 +24,31 @@
 	border-radius: 1rem;
 	padding: 1rem;
 	width: 75%;
-	box-shadow: 0 3px 8px rgba(128,0,0,0.5);
+	box-shadow: 0 3px 8px rgba(128, 0, 0, 0.5);
+
+	@media (width < 769px) {
+		padding: .5rem 1rem;
+	}
 }
 
 .youtube__component__logo__image {
 	width: 128px;
+	vertical-align: middle;
+
+	@media (width < 769px) {
+		width: 72px;
+	}
 }
 
 .youtube__component__text {
-    justify-self: start;
+	justify-self: start;
 }
 
 .youtube__component__text__subscribers {
 	font-size: 3rem;
 	font-weight: 700;
+
+	@media (width < 512px) {
+	font-size: clamp(2rem, 2vw, 3rem)
+    }
 }

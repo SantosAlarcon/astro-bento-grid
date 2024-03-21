@@ -24,6 +24,11 @@
 
 .twitch__component__logo__image {
 	filter: drop-shadow(4px 4px 2px #66f6);
+	vertical-align: middle;
+
+	@media (width < 560px) {
+		width: clamp(3rem, 2.5vw, 4rem);
+	}
 }
 
 .twitch__component__text {
